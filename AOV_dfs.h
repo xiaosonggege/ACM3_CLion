@@ -15,6 +15,7 @@ private:
     string path; //文件读取路径
     vector<vector<int>> graph; //AOV邻接表矩阵
     vector<pair<int, int>> node_name;
+    int circle = 0; //闭环标志
 public:
     AOV_dfs() = default;
     AOV_dfs(const string&);
